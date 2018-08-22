@@ -1,0 +1,24 @@
+ul {
+  list-style: none;
+
+  li {
+    display: inline-block;
+    text-decoration: none;
+    margin: 20px;
+    cursor: pointer;
+    color: darkslategrey;
+    background-color: lightblue;
+    padding: 10px;
+
+    &:hover {
+      color: darken(darkslategrey, 10%);
+      background-color: darken(lightblue, 10%);
+    }
+  }
+
+  .activeLink {
+    color: white;
+    background-color: darken(lightblue, 40%);
+  }
+}
+
