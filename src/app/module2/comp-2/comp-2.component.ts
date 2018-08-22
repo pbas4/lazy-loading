@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-comp-2',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Comp2Component implements OnInit {
 
-  constructor() { }
+  constructor(
+    private _route: ActivatedRoute,
+    private _router: Router
+  ) { }
 
   ngOnInit() {
+  }
+
+  seeMyRoute() {
+    // this._route.
+  }
+
+  redirect() {
+    this._router.navigate(['comp-2', 'aasdfsdfs']);
   }
 
 }
